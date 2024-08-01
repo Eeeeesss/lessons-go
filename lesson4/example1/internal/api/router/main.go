@@ -9,4 +9,5 @@ import (
 // SetupRoutes setup router api
 func SetupRoutes(mux *http.ServeMux, api apiT.Api) {
 	ping(mux)
+	ai(mux, api.Config().AIApiKey)
 }
